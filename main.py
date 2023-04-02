@@ -48,7 +48,10 @@ def division():
         alerta("El resultado de la suma es: " + str(resultado))
     except:
         MessageBox.showerror("Error","Introduce los datos correctos!!")
-    
+
+def borrar():
+    num1.set(0)
+    num2.set(0)    
 
 Label(ventana).grid(row=0,column=0)
 Label(ventana, text="Numero 1: ",width=10).grid(row=1,column=0,padx= 10, pady=5)
@@ -64,4 +67,5 @@ Button(ventana, text="Resta",command= resta,width=15).grid(row=4,column=2,column
 Button(ventana, text="Multiplicación",command= multiplicacion ,width=15).grid(row=5,column=0,columnspan=2,padx= 5, pady=5)
 Button(ventana, text="División",command= division ,width=15).grid(row=5,column=2,columnspan=2,padx= 5, pady=5)
 
+Button(ventana, text="Borrar",command= borrar ,width=15).grid(row=6,column=0,columnspan=4,padx= 5, pady=5)
 ventana.mainloop()
