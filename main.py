@@ -38,14 +38,14 @@ def resta():
 def multiplicacion():
     try:
         resultado = num1.get() * num2.get()
-        alerta("El resultado de la suma es: " + str(resultado))
+        alerta("El resultado de la multiplicación es: " + str(resultado))
     except:
         MessageBox.showerror("Error","Introduce los datos correctos!!")
 
 def division():
     try:
         resultado = num1.get() / num2.get()
-        alerta("El resultado de la suma es: " + str(resultado))
+        alerta("El resultado de la división es: " + str(resultado))
     except:
         MessageBox.showerror("Error","Introduce los datos correctos!!")
 
