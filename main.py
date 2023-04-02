@@ -20,21 +20,34 @@ num2 = IntVar()
 def alerta(resultado):
     MessageBox.showinfo("Resultado",resultado)
 
+
 def sumar():
-    resultado = num1.get() + num2.get()
-    alerta("El resultado de la suma es: " + str(resultado))
+    try:
+        resultado = num1.get() + num2.get()
+        alerta("El resultado de la suma es: " + str(resultado))
+    except:
+        MessageBox.showerror("Error","Introduce los datos correctos!!")
 
 def resta():
-    resultado = num1.get() - num2.get()
-    alerta("El resultado de la resta es: " + str(resultado))
+    try:
+        resultado = num1.get() - num2.get()
+        alerta("El resultado de la resta es: " + str(resultado))
+    except:
+        MessageBox.showerror("Error","Introduce los datos correctos!!")
 
 def multiplicacion():
-    resultado = num1.get() * num2.get()
-    alerta("El resultado de la suma es: " + str(resultado))
+    try:
+        resultado = num1.get() * num2.get()
+        alerta("El resultado de la suma es: " + str(resultado))
+    except:
+        MessageBox.showerror("Error","Introduce los datos correctos!!")
 
 def division():
-    resultado = num1.get() / num2.get()
-    alerta("El resultado de la suma es: " + str(resultado))
+    try:
+        resultado = num1.get() / num2.get()
+        alerta("El resultado de la suma es: " + str(resultado))
+    except:
+        MessageBox.showerror("Error","Introduce los datos correctos!!")
     
 
 Label(ventana).grid(row=0,column=0)
